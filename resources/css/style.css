@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ab1010;
+    color: white; /* Menambahkan warna teks putih agar terbaca */
+    margin: 0;
+    padding: 0;
+}
+p.warna{
+    color: rgb(21, 39, 176);
+    text-align: center;
+    padding-top: 20px;
+}
