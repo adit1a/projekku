@@ -33,8 +33,14 @@
             <p class="mid1">kotak tengah</p>
             <p class="mid12">ini tulisan</p>
             <div class="tombol">
-                <button type="button" class="button" disabled aria-label="Close"><a href="/"
+                <button id='tombol-home'type="button" 
+                class="button" disabled aria-label="Close"><a href="/"
                         class="tekan">Tekan</a></button>
+            </div>
+            <div class="class-btn">
+                <button class="btn-tolist"><a class="btn-tolist1"
+                href='/toList'>Tekan
+                </a></button>
             </div>
         </div>
     </div>

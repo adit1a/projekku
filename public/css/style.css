@@ -99,9 +99,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-.tombol{
-    
-}
 .button{
     background-color:#bad6bb;
     border:solid #6f8471 2px;
@@ -113,9 +110,12 @@ body{
 .tekan{
     text-decoration: none;
     color: #264653;
+    
 }
 .tekan:hover{
-    text-decoration: underline;
+    text-decoration:none;
+    border:none;
+    
 }
 .box{
     width:200px;
@@ -147,3 +147,23 @@ body{
     display:block;
     margin-bottom:5px;
 }
+.class-btn{
+   margin-top: -120px;
+   margin-left: 1300px;
+   
+}
+.btn-tolist1{
+    cursor:pointer;
+    background-color:#f0f1f1;
+    text-decoration:none;
+    color:#000000;
+}
+.btn-tolist1:hover{
+    text-decoration:none;
+    background-color: #4CAF50;
+}
+.btn-tolist:hover{
+    background-color:#66ffff;
+   
+}
+
