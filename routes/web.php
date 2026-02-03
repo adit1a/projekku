@@ -22,3 +22,6 @@ Route::get('/home', function () {
 Route::get('/toList', function(){
     return view('toList');
 });
+Route::get('/new', function(){
+    return view('new');
+});

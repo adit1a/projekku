@@ -27,14 +27,30 @@ body{
     justify-content:baseline;
     margin-right: 115px;
 }
-.h2list, .h2list2{
+.h2list2{
     padding:10px 30px;
     border:rgb(72, 185, 136) solid 1px;
     background-color: rgb(72, 185, 136);
+    padding-top:2px;
     border-radius: 20px;
     width: 350px;
-    margin:0px;
-    
+    display: flex;
+    justify-content: center; 
+    margin-right:206px;  
+}
+.h2list {
+    display: flex;
+    justify-content: center;
+    padding:10px 30px;
+    border:rgb(72, 185, 136) solid 1px;
+    background-color: rgb(72, 185, 136);
+    padding-top:2px;
+    border-radius: 20px;
+    width: 350px;
+    margin:0px;   
+}
+.h2list{
+    margin-right: 8px;
 }
 .isi{
     padding-left: 40px;
@@ -46,9 +62,154 @@ body{
     box-sizing: border-box;
     border: rgb(5, 238, 118) solid 2px;
     flex-direction: column;
+    margin-left: 40px;
+    padding-left: 10px;
     display:flex;
     justify-content:baseline;
     align-items:baseline;
+}
+.kotak2{
+    width:300px;
+    height:300px;
+    background-color:rgb(5, 238, 118);
+    box-sizing: border-box;
+    border: rgb(7, 7, 7) solid 1px;
+    margin-top: -290px;
+    margin-left: 670px;
+    flex-direction: column;
+    display:flex;
+    justify-content:flex-start;
+    align-items:baseline;
+    padding: 10px;
+}
+.kotak2 span{
+    display: flex;
+    justify-content: center;
+    color: rgb(78, 2, 255);
+    font-weight: bold ;
+    border: #bb0efa solid 2px;
+    border-radius: 5px;
+    width: 270px;
+}
+
+.kotak3{
+    width:300px;
+    height:300px;
+    background-color:rgb(5, 238, 118);
+    box-sizing: border-box;
+    border: rgb(7, 7, 7) solid 1px;
+    margin-top: -290px;
+    margin-left: 985px;
+    flex-direction: column;
+    display:flex;
+    justify-content:flex-start;
+    align-items:baseline;
+    padding-top:10px;
+    padding-left: 20px;
+
+}
+.kotak3 span{
+    display: flex;
+    justify-content: center;
+    color: rgb(78, 2, 255);
+    font-weight: bold ;
+    border: #bb0efa solid 2px;
+    border-radius: 5px;
+    width: 270px;
+}
+.kotak4{
+    width:300px;
+    height:300px;
+    background-color:rgb(5, 238, 118);
+    box-sizing: border-box;
+    border: rgb(7, 7, 7) solid 1px;
+    margin-top: 50px;
+    margin-left: 985px;
+    flex-direction: column;
+    display:flex;
+    justify-content:flex-start;
+    align-items:baseline;
+    padding-top:10px;
+    padding-left: 20px;
+}
+.kotak4 span{
+    display: flex;
+    justify-content: center;
+    color: rgb(78, 2, 255);
+    font-weight: bold ;
+    border: #bb0efa solid 2px;
+    border-radius: 5px;
+    width: 270px;
+}
+.kotak5{
+    width:300px;
+    height:300px;
+    background-color:rgb(5, 238, 118);
+    box-sizing: border-box;
+    border: rgb(7, 7, 7) solid 1px;
+    margin-top: -290px;
+    margin-left: 670px;
+    flex-direction: column;
+    display:flex;
+    justify-content:flex-start;
+    align-items:baseline;
+    padding: 10px;
+}
+.kotak5 span{
+    display: flex;
+    justify-content: center;
+    color: rgb(78, 2, 255);
+    font-weight: bold ;
+    border: #bb0efa solid 2px;
+    border-radius: 5px;
+    width: 270px;
+}
+.kotak6{
+    width:300px;
+    height:300px;
+    background-color:rgb(5, 238, 118);
+    box-sizing: border-box;
+    border: rgb(7, 7, 7) solid 1px;
+    margin-top: 40px;
+    margin-left: 670px;
+    flex-direction: column;
+    display:flex;
+    justify-content:flex-start;
+    align-items:baseline;
+    padding: 10px;
+}
+.kotak6 span{
+    display: flex;
+    justify-content: center;
+    color: rgb(78, 2, 255);
+    font-weight: bold ;
+    border: #bb0efa solid 2px;
+    border-radius: 5px;
+    width: 270px;
+}
+.kotak7{
+    width:300px;
+    height:300px;
+    background-color:rgb(5, 238, 118);
+    box-sizing: border-box;
+    border: rgb(7, 7, 7) solid 1px;
+    margin-top: -290px;
+    margin-left: 985px;
+    flex-direction: column;
+    display:flex;
+    justify-content:flex-start;
+    align-items:baseline;
+    padding-top:10px;
+    padding-left: 20px;
+}
+.kotak7 span{
+    display: flex;
+    justify-content: center;
+    color: rgb(78, 2, 255);
+    font-weight: bold ;
+    border: #bb0efa solid 2px;
+    border-radius: 5px;
+    width: 265px;
 }
 .tombol{
     margin-top: 115px;
@@ -92,21 +253,67 @@ input{
   justify-content: space-between;
 }
 .tekann{
-    margin-left: 230px;
+    margin-left: 270px;
     margin-top:-30px;
 }
-.isi2{
-    background-color:rgb(5, 238, 118);
-    width: 300px;
-    height: 300px;
-    border: #050404 solid 1px;
-    margin-top: -285px;
-    margin-left: 1015px
+.item-radio{
+    display:flex;
+    align-items:center;
+    justify-content: baseline;
+    margin-bottom: 10px;
+    margin-right: -20px;
 
+}
+input [type="radio"]{
+   
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+label{
+    margin:0px;
+    cursor:pointer;
+    font-size: 16px;
 }
 .kata{  
     display: flex;
     justify-content: baseline;
     padding-left: 5px;
     padding-top:4px;
+}
+
+.input2, .radio1, .item-radio label {
+    margin: 0;
+    font-size: 17px;
+    padding-left: 8px;
+}
+.input2{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+    margin-bottom: 5px;
+    width:15px;
+}
+.tekann2{
+    margin-left: 900px;
+    margin-top:-30px;
+}
+.tekann3{
+    margin-left: 1225px;
+    margin-top:-30px;
+}
+.tekann4{
+    margin-left: 900px;
+    margin-top:-30px;
+}
+.tekann5{
+    margin-left: 1227px;
+    margin-top:-30px;
+}
+.tekann6{
+    margin-left: 900px;
+    margin-top:-30px;
 }
