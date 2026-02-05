@@ -25,3 +25,9 @@ Route::get('/toList', function(){
 Route::get('/new', function(){
     return view('new');
 });
+Route::get('/dashboard', function(){
+    return view('dashboard');
+});
+Route::get('/layouts/app', function(){
+    return view('layouts.app');
+});
