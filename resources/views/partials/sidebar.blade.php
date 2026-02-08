@@ -28,7 +28,6 @@
         </div>
         <div class="icon-notif" style="cursor: pointer;">🔔</div>
     </header>
-
     <section class="hero-banner" style="background: white; border-radius: 20px; padding: 40px; display: flex; justify-content: space-between; align-items: center;">
         <div class="hero-text">
             <h1 style="font-size: 40px;">Today Task</h1>

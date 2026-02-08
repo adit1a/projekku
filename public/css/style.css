@@ -1,135 +1,220 @@
-/* =========================================
-   1. RESET & DASAR (GENERAL)
-   ========================================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Pastikan font terbaca rapi */
-}
-
-body {
-    background-color: #f8f9fe;
-    color: #1a1a1a;
-}
-
-.notification-icon{
-    margin-left: -160px;
-}
-/* =========================================
-   2. LAYOUT UTAMA (FLEXBOX)
-   ========================================= */
+/* Pastikan pembungkusnya Flexbox */
 .dashboard-wrapper {
     display: flex;
     min-height: 100vh;
+    width: 100%;
 }
 
-/* Area Konten Utama */
-.content-area {
-    flex-grow: 1;
-    padding: 30px;
-    overflow-y: auto;
-}
 
-/* =========================================
-   3. SIDEBAR (NAVIGASI)
-   ========================================= */
 .sidebar {
     width: 260px;
     background-color: #ffffff;
     border-right: 1px solid #eee;
     padding: 25px;
-    display: flex;
-    flex-direction: column;
-}
+    flex-shrink: 0;
 
-.sidebar-logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 50px;
 }
-
-.sidebar ul {
+.nav-menu{
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
-.sidebar ul li {
-    margin-bottom: 20px;
-}
-
-/* Menghilangkan Underline & Rata Kiri */
-.sidebar ul li a {
-    text-decoration: none; /* Garis bawah hilang */
-    color: #8e8e8e;        /* Warna abu-abu profesional */
-    font-size: 16px;
+.nav-menu li a{
+    color: #050505;
+    text-decoration: none;
     display: block;
+    padding: 10px 15px;
+    border-radius: 8px;
     transition: 0.3s;
-    text-align: left;      /* Rata kiri */
+    text-align: left;
 }
 
-.sidebar ul li a:hover, 
-.sidebar ul li a.active {
-    color: #5a32a3;        /* Berubah warna ungu saat aktif/hover */
-    font-weight: 600;
-}
-
-/* =========================================
-   4. TOP HEADER (HI, USER)
-   ========================================= */
-.top-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 35px;
-    padding-bottom: 10px;
-}
-
-.top-header h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.top-header p {
+.nav-menu li a:hover{
+    background-color: #f0ebf8;
     color: #5a32a3;
-    font-weight: 500;
+    text-decoration: none;
 }
-
-/* =========================================
-   5. HERO BANNER (TODAY TASK)
-   ========================================= */
-.hero-banner {
-    background-color: #ffffff;
-    border-radius: 24px;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-    margin-bottom: 40px;
-}
-
-.hero-text h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
-.btn-schedule {
+.nav-menu li a.active{
     background-color: #5a32a3;
     color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 12px;
     font-weight: 600;
-    cursor: pointer;
-    margin-top: 20px;
 }
 
-/* =========================================
-   6. GRID TUGAS (CARDS)
-   ========================================= */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+.content-area {
+    position: relative; 
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #f8f9fe;
+}
+
+.top-header {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.card-profile {
+    position: relative;
+    bottom: 407px;
+    left: 1459px;
+    background-color: #5a32a3;
+    width: 350px;
+    height: 700px;
+    border-radius: 15px;
+    color: white;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(90, 50, 163, 0.2);
+}
+.card-profile h3{
+    display: flex;
+    justify-content: left;
+}
+.p2{
+    position: relative;
+    display: flex;
+    top:305px;
+    padding-left: 7px;
+    justify-content: baseline;
+    
+}
+.card-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.card-schedule{
+    position: relative;
+    top: 20px;
+    left: 27px; 
+    
+    background-color: #f2f0f7;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(6, 5, 5);
+    box-shadow: 0 10px 20px rgba(90, 50, 163, 0.2);
+    z-index: 10;
+}
+.progres-workout{
+    position: relative;
+    padding: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: #ebe1e1;
+    border-radius: 7px;
+    left: 300px;
+    bottom: 700px;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(205, 3, 3, 0.05);
+}
+.progres-workout:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.progres-baca{
+    position: relative;
+    padding: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: #ebe1e1;
+    border-radius: 7px;
+    left: 700px;
+    bottom: 1000px;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(205, 3, 3, 0.05);
+}
+.progres-baca:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.progres-koding{
+    position: relative;
+    padding: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: #ebe1e1;
+    border-radius: 7px;
+    left: 1100px;
+    bottom: 1300px;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(205, 3, 3, 0.05);
+}
+.progres-koding:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.card-workout{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+.days-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+}
+.day-box{
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 5px;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 30px;
+}
+.day-box span {
+    font-size: 9px;
+    opacity: 0.7;
+}
+.day-box.active {
+    background: white;
+    color: #5a32a3;
+    font-weight: bold;
+}
+.schedule-info{
+    margin-top: 15px;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.notification-icon {
+   font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.hero-banner{
+    background-color: #a0a0a0;
+    width: 1070px;
+    position: relative;
+    bottom: 2000px;
+    left: 300px;
+    border-radius: 9px;
+}
+.hero-text h1{
+    display: flex;
+    justify-content: center;
+}
+.btn-schedule{
+    position: relative;
+    left: 957px;
+    display: flex;
+    justify-content: center;
+}
+.grid-container{
+    width: 25%;
+    position: relative;
+    bottom: 500px;
+}
+.profile-header h3{
+    padding: 7px;
 }
