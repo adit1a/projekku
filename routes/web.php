@@ -28,6 +28,9 @@ Route::get('/new', function(){
 Route::get('/dashboard', function(){
     return view('dashboard');
 });
+Route::get('/progress', function(){
+    return view('progress');
+});
 Route::get('/layouts/app', function(){
     return view('layouts.app');
 });
